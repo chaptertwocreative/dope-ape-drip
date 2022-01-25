@@ -63,7 +63,10 @@ const Footer = () => {
             social="discord"
             handles={{ discord: "dopeapedrip" }}
           />
-          <SocialIconLink social="opensea" handles={{ opensea: "" }} />
+          <SocialIconLink
+            social="opensea"
+            handles={{ opensea: "dopeapedripsociety" }}
+          />
         </FlexContainer>
       </FlexContainer>
       <Line />

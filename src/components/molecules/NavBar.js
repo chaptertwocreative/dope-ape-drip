@@ -137,7 +137,7 @@ const NavBar = ({ isHome }) => {
             />
           </a>
           <a
-            href="https://opensea.io/collection/"
+            href="https://opensea.io/collection/dopeapedripsociety"
             target="_blank"
             rel="noreferrer"
             className="social-links"

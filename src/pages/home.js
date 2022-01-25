@@ -149,7 +149,7 @@ export default function Home() {
       </RoadmapSection>
       <section id="team">
         <Title>Team</Title>
-        <FlexContainer gap={width <= 768 ? "2rem" : "1rem"} wrap>
+        <FlexContainer gap={width <= 768 ? "2rem" : "1rem"}>
           {team.map((el) => {
             const { name, src, alt, role, handles } = el
             return (
