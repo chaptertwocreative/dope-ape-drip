@@ -34,7 +34,7 @@ export const DrippywoodIcons = [
     alt: "drip box icon",
     title: "Drip Box",
     description:
-      "Monthly Merch Subscription Box of 3-4 high quality itmes from our streetwear brand."
+      "Monthly Merch Subscription Box of 3-4 high quality items from our streetwear brand."
   },
   {
     src: TOKEN,
@@ -48,7 +48,7 @@ export const DrippywoodIcons = [
     alt: "DADs metaverse icon",
     title: "Metaverse",
     description:
-      "Purchasing Land and 3D avatar creatioj of our drippy apes for all our holders."
+      "Purchasing Land and 3D avatar creation of our drippy apes for all our holders."
   }
 ]
 
