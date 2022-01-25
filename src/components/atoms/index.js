@@ -27,7 +27,7 @@ export const FlexContainer = styled.div`
   flex-wrap: ${(props) => (props.wrap ? "wrap" : "no-wrap")};
   gap: ${(props) => props.gap};
 
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 600px) {
     flex-direction: ${(props) => props.direction || "column"};
   }
 `
@@ -77,7 +77,7 @@ export const Line = styled.div`
     transform: translate(26px, 50%);
     height: 175px;
   }
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 600px) {
     display: none;
   }
 `

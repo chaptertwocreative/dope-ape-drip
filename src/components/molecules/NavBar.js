@@ -71,8 +71,22 @@ const Logo = styled.div`
   }
 `
 
+const SocialIcon = styled.div`
+  height: 30px;
+  width: 30px;
+
+  @media only screen and (max-width: 768px) {
+    height: 20px;
+    width: 20px;
+  }
+  @media only screen and (max-width: 425px) {
+    height: 16px;
+    width: 16px;
+  }
+`
+
 const NavBar = ({ isHome }) => {
-  const { height, width } = useWindowSize()
+  const { width } = useWindowSize()
   return (
     <Container>
       <Link href="/" passHref>
@@ -80,77 +94,92 @@ const NavBar = ({ isHome }) => {
           <Image
             src={width <= 768 && isHome ? SKULL : LOGO}
             alt="Dope Ape Drip Society Logo"
-            layout="responsive"
+            layout="fixed"
             height={width <= 768 && isHome ? 50 : 70}
             width={width <= 768 && isHome ? 75 : 210}
           />
         </Logo>
       </Link>
       <div style={{ display: "flex", alignItems: "center" }}>
-        {isHome && (
-          <Links>
-            <Link href="/home#mint">Buy an ape</Link>
-            <Link href="/home#roadmap">Roadmap</Link>
-            <Link href="/store">Store</Link>
-            <Link href="/home#team">Team</Link>
-            <Link href="/home#faqs">FAQs</Link>
-          </Links>
+        {isHome && width > 768 && (
+          <>
+            <Links>
+              <Link href="/home#mint">Buy an ape</Link>
+              <Link href="/home#roadmap">Roadmap</Link>
+              <Link href="/store">Store</Link>
+              <Link href="/home#team">Team</Link>
+              <Link href="/home#faqs">FAQs</Link>
+            </Links>
+            <Links>
+              <a
+                href="https://instagram.com/dopeapedripsociety"
+                target="_blank"
+                rel="noreferrer"
+                className="social-links"
+              >
+                <SocialIcon>
+                  <Image
+                    src="/instagram-logo-gray.svg"
+                    alt="instagram logo"
+                    height={30}
+                    width={30}
+                    layout="fixed"
+                  />
+                </SocialIcon>
+              </a>
+              <a
+                href="https://twitter.com/dopeapedrip"
+                target="_blank"
+                rel="noreferrer"
+                className="social-links"
+              >
+                <SocialIcon>
+                  <Image
+                    src="/twitter-logo-gray.svg"
+                    alt="twitter logo"
+                    height={30}
+                    width={30}
+                    layout="fixed"
+                  />
+                </SocialIcon>
+              </a>
+              <a
+                href="https://discord.gg/dopeapedrip"
+                target="_blank"
+                rel="noreferrer"
+                className="social-links"
+              >
+                <SocialIcon>
+                  <Image
+                    src="/discord-logo-gray.svg"
+                    alt="discord logo"
+                    height={30}
+                    width={30}
+                    layout="fixed"
+                  />
+                </SocialIcon>
+              </a>
+              <a
+                href="https://opensea.io/collection/dopeapedripsociety"
+                target="_blank"
+                rel="noreferrer"
+                className="social-links"
+              >
+                <SocialIcon>
+                  <Image
+                    src="/opensea-logo-gray.svg"
+                    alt="opensea logo"
+                    height={30}
+                    width={30}
+                    layout="fixed"
+                  />
+                </SocialIcon>
+              </a>
+            </Links>
+          </>
         )}
-        <Links>
-          <a
-            href="https://instagram.com/dopeapedripsociety"
-            target="_blank"
-            rel="noreferrer"
-            className="social-links"
-          >
-            <Image
-              src="/instagram-logo-gray.svg"
-              alt="instagram logo"
-              height={30}
-              width={30}
-            />
-          </a>
-          <a
-            href="https://twitter.com/dopeapedrip"
-            target="_blank"
-            rel="noreferrer"
-            className="social-links"
-          >
-            <Image
-              src="/twitter-logo-gray.svg"
-              alt="twitter logo"
-              height={30}
-              width={30}
-            />
-          </a>
-          <a
-            href="https://discord.gg/dopeapedrip"
-            target="_blank"
-            rel="noreferrer"
-            className="social-links"
-          >
-            <Image
-              src="/discord-logo-gray.svg"
-              alt="discord logo"
-              height={30}
-              width={30}
-            />
-          </a>
-          <a
-            href="https://opensea.io/collection/dopeapedripsociety"
-            target="_blank"
-            rel="noreferrer"
-            className="social-links"
-          >
-            <Image
-              src="/opensea-logo-gray.svg"
-              alt="opensea logo"
-              height={30}
-              width={30}
-            />
-          </a>
-        </Links>
-        {isHome && width <= 425 && (
+
+        {isHome && width <= 768 && (
           <Menu right width={"85%"}>
             <Link href="/home#mint">Buy an ape</Link>
             <Link href="/home#roadmap">Roadmap</Link>

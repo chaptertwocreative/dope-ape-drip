@@ -8,7 +8,7 @@ const Main = styled.main`
   padding: 0 7.5rem;
 
   @media only screen and (max-width: 768px) {
-    padding: 0 4rem;
+    padding: 0 3rem;
   }
 
   @media only screen and (max-width: 425px) {
