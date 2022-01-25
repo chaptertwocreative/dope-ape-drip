@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/images/favicon.ico" />
         <title>Dope Ape Drip Society</title>
       </Head>
       <GlobalStyle />
