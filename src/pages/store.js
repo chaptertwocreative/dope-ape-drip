@@ -16,7 +16,13 @@ export default function Page() {
     <Layout>
       <Container>
         <div style={{ height: 300, width: 300 }}>
-          <Image src={LOGO} layout="responsive" height={95} width={95} />
+          <Image
+            src={LOGO}
+            layout="responsive"
+            height={95}
+            width={95}
+            alt="DAD circle logo"
+          />
         </div>
         <h2>Coming soon...</h2>
       </Container>

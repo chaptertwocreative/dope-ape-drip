@@ -62,7 +62,13 @@ export default function Home() {
         />
         <HomeCard>
           <Logo>
-            <Image src={LOGO} layout="responsive" height={95} width={95} />
+            <Image
+              src={LOGO}
+              layout="responsive"
+              height={95}
+              width={95}
+              alt="DAD circle logo"
+            />
           </Logo>
           <h1 style={{ textAlign: width <= 425 && "center" }}>
             Welcome to the Dope Ape Society
