@@ -18,7 +18,6 @@ const Main = styled.main`
 
 const Layout = ({ children }) => {
   const router = useRouter()
-  console.log(router.pathname)
   const isHome = router.pathname !== "/"
 
   return (

@@ -24,7 +24,7 @@ export const FlexContainer = styled.div`
   justify-content: ${(props) => props.justify || "space-between"};
   align-items: ${(props) => props.alignItems || "center"};
   align-content: ${(props) => props.alignContent || "center"};
-  flex-wrap: ${(props) => props.wrap && "wrap"};
+  flex-wrap: ${(props) => (props.wrap ? "wrap" : "no-wrap")};
   gap: ${(props) => props.gap};
 
   @media only screen and (max-width: 425px) {

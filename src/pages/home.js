@@ -81,6 +81,7 @@ export default function Home() {
           layout="responsive"
           width={1200}
           height={767}
+          priority
         />
       </FullWidth>
       <ITitle>

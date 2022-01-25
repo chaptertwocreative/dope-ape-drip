@@ -61,23 +61,32 @@ const Links = styled.div`
   }
 `
 
+const Logo = styled.div`
+  height: 70px;
+  width: 210px;
+
+  @media only screen and (max-width: 425px) {
+    height: 50px;
+    width: 75px;
+  }
+`
+
 const NavBar = ({ isHome }) => {
   const { height, width } = useWindowSize()
   return (
     <Container>
       <Link href="/" passHref>
-        <Image
-          src={width <= 768 && isHome ? SKULL : LOGO}
-          alt="Dope Ape Drip Society Logo"
-          layout="intrinsic"
-          height={width <= 768 && isHome ? 50 : 70}
-          width={width <= 768 && isHome ? 75 : 210}
-        />
+        <Logo>
+          <Image
+            src={width <= 768 && isHome ? SKULL : LOGO}
+            alt="Dope Ape Drip Society Logo"
+            layout="responsive"
+            height={width <= 768 && isHome ? 50 : 70}
+            width={width <= 768 && isHome ? 75 : 210}
+          />
+        </Logo>
       </Link>
-      <div
-        style={{ display: "flex", alignItems: "center" }}
-        className="desktop-nav"
-      >
+      <div style={{ display: "flex", alignItems: "center" }}>
         {isHome && (
           <Links>
             <Link href="/home#mint">Buy an ape</Link>
@@ -128,7 +137,7 @@ const NavBar = ({ isHome }) => {
             />
           </a>
           <a
-            href="https://opensea.io/collection/dope-ape-drip-society"
+            href="https://opensea.io/collection/"
             target="_blank"
             rel="noreferrer"
             className="social-links"
@@ -189,7 +198,7 @@ const NavBar = ({ isHome }) => {
                 />
               </a>
               <a
-                href="https://opensea.io/collection/dope-ape-drip-society"
+                href="https://opensea.io/collection/"
                 target="_blank"
                 rel="noreferrer"
                 className="social-links"

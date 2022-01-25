@@ -1,6 +1,6 @@
 import { ThemeProvider } from "styled-components"
 import "./styles/normalize.css"
-import { GlobalStyle } from "./GlobalStyles"
+import GlobalStyle from "./GlobalStyles"
 import "./styles/navigation.css"
 
 const theme = {
