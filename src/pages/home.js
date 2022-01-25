@@ -142,7 +142,7 @@ export default function Home() {
             style={{ position: "relative" }}
           >
             {RoadmapContent.map((src, idx) => (
-              <RoadmapLine text={src.text} key={idx} />
+              <RoadmapLine text={src.text} key={idx} idx={idx} />
             ))}
           </FlexContainer>
         </FlexContainer>

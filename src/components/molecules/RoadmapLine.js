@@ -10,11 +10,11 @@ const RoadmapItem = styled.p`
   }
 `
 
-const RoadmapLine = ({ text }) => {
+const RoadmapLine = ({ text, idx }) => {
   return (
     <FlexContainer style={{ width: "100%" }} className="roadmapLineContainer">
       <Line className="roadmap-line" />
-      <RoadmapDot />
+      <RoadmapDot>{(idx + 1) * 14}%</RoadmapDot>
       <RoadmapItem>{text}</RoadmapItem>
     </FlexContainer>
   )

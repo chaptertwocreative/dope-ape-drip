@@ -25,6 +25,8 @@ const ImageContainer = styled.div`
   }
 `
 const TeamBlock = ({ src, alt, name, role, handles }) => {
+  const hasTwitter = handles["twitter"]
+  const hasInstagram = handles["instagram"]
   return (
     <div>
       <ImageContainer>
@@ -43,8 +45,10 @@ const TeamBlock = ({ src, alt, name, role, handles }) => {
         gap="1rem"
         style={{ flexDirection: "row" }}
       >
-        <SocialIconLink social="twitter" handles={handles} />
-        <SocialIconLink social="instagram" handles={handles} />
+        {hasTwitter && <SocialIconLink social="twitter" handles={handles} />}
+        {hasInstagram && (
+          <SocialIconLink social="instagram" handles={handles} />
+        )}
       </FlexContainer>
     </div>
   )

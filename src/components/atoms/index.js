@@ -43,11 +43,17 @@ export const Title = styled.h2`
   }
 `
 export const RoadmapDot = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 60px;
   width: 60px;
   border-radius: 50px;
-  background-color: #595959;
+  background-color: #0c0c0c;
   border: 8px solid #fbc50d;
+  font-style: italic;
+  font-size: 14px;
+
   @media only screen and (max-width: 768px) {
     height: 45px;
     width: 45px;

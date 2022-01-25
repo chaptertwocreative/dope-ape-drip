@@ -109,7 +109,7 @@ export const team = [
     role: "Co-Founder",
     handles: {
       twitter: "",
-      instagram: ""
+      instagram: "edsony10"
     }
   },
   {
@@ -119,7 +119,7 @@ export const team = [
     role: "Marketing/Design",
     handles: {
       twitter: "pixxelznft",
-      instagram: "pixxelznft"
+      instagram: ""
     }
   },
   {
