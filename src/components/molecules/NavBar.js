@@ -79,7 +79,7 @@ const SocialIcon = styled.div`
     height: 20px;
     width: 20px;
   }
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 430px) {
     height: 16px;
     width: 16px;
   }

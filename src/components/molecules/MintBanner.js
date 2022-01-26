@@ -12,7 +12,7 @@ const Container = styled.div`
   @media only screen and (max-width: 768px) {
     padding: 2.5rem 3rem;
   }
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 430px) {
     padding: 2rem;
     flex-direction: column;
   }
@@ -30,7 +30,7 @@ const Text = styled.div`
     @media only screen and (max-width: 768px) {
       font-size: 24px;
     }
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 430px) {
       font-size: 20px;
       text-align: center;
     }
@@ -42,7 +42,7 @@ const Text = styled.div`
     @media only screen and (max-width: 768px) {
       font-size: 16px;
     }
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 430px) {
       margin-bottom: 1rem;
       text-align: center;
     }

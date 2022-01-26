@@ -11,7 +11,7 @@ const IFooter = styled.footer`
   padding: 6rem 7.5rem 3rem 7.5rem;
 
   p {
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 430px) {
       display: none;
     }
   }

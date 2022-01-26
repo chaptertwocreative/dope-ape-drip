@@ -16,7 +16,7 @@ const ImageContainer = styled.div`
     height: 100px;
     width: 100px;
   }
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 430px) {
     height: 180px;
     width: 180px;
   }
@@ -29,7 +29,7 @@ const Text = styled.div`
     @media only screen and (max-width: 768px) {
       font-size: 18px;
     }
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 430px) {
       font-size: 22px;
     }
   }
@@ -41,7 +41,7 @@ const Text = styled.div`
       width: 150px;
       font-size: 14px;
     }
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 430px) {
       font-size: 16px;
       width: 90%;
       margin: 0 auto;

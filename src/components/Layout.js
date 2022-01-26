@@ -11,7 +11,7 @@ const Main = styled.main`
     padding: 0 3rem;
   }
 
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 430px) {
     padding: 0 2rem;
   }
 `

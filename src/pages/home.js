@@ -64,7 +64,7 @@ const RoadmapSection = styled.section`
 const ApeContainer = styled.div`
   height: 260px;
   width: 260px;
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 430px) {
     height: 150px;
     width: 150px;
   }
@@ -183,7 +183,7 @@ export default function Home() {
           width: 100%;
         }
 
-        @media only screen and (max-width: 425px) {
+        @media only screen and (max-width: 430px) {
           .roadmap-container {
             padding: 1rem;
           }

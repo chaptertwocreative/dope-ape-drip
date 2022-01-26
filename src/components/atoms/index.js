@@ -58,7 +58,7 @@ export const RoadmapDot = styled.div`
     height: 45px;
     width: 45px;
   }
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 430px) {
     height: 40px;
     width: 40px;
     border-width: 6px;

@@ -32,7 +32,7 @@ const HomeCard = styled.div`
 const Logo = styled.div`
   height: 95px;
   width: 95px;
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 430px) {
     margin: 0 auto;
   }
 `
@@ -71,7 +71,7 @@ export default function Home() {
               alt="DAD circle logo"
             />
           </Logo>
-          <h1 style={{ textAlign: width <= 425 && "center" }}>
+          <h1 style={{ textAlign: width <= 430 && "center" }}>
             Welcome to the Dope Ape Society
           </h1>
           <Link href="/home" passHref>
@@ -82,7 +82,7 @@ export default function Home() {
                 width: 260,
                 fontWeight: 700,
                 fontSize: 26,
-                margin: width <= 425 && "0 auto"
+                margin: width <= 430 && "0 auto"
               }}
             >
               Enter
