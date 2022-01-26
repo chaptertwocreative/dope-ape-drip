@@ -11,10 +11,16 @@ const RoadmapItem = styled.p`
 `
 
 const RoadmapLine = ({ text, idx }) => {
+  let percentage
+  if (idx === 6) {
+    percentage = 100
+  } else {
+    percentage = (idx + 1) * 14
+  }
   return (
     <FlexContainer style={{ width: "100%" }} className="roadmapLineContainer">
       <Line className="roadmap-line" />
-      <RoadmapDot>{(idx + 1) * 14}%</RoadmapDot>
+      <RoadmapDot>{percentage}%</RoadmapDot>
       <RoadmapItem>{text}</RoadmapItem>
     </FlexContainer>
   )
