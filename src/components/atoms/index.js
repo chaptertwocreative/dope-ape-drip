@@ -67,7 +67,7 @@ export const RoadmapDot = styled.div`
 
 export const Line = styled.div`
   position: absolute;
-  height: 180px;
+  height: 205px;
   width: 8px;
   background-color: #fbc50d;
   transform: translate(34px, 50%);

@@ -4,7 +4,7 @@ import styled from "styled-components"
 const RoadmapItem = styled.p`
   width: 75%;
   line-height: 170%;
-  font-size: 18px;
+  font-size: 15px;
   @media only screen and (max-width: 768px) {
     font-size: 16px;
   }

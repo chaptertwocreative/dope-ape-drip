@@ -43,13 +43,13 @@ const Links = styled.div`
     @media only screen and (max-width: 768px) {
       font-size: 15px;
     }
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 430px) {
       text-align: center;
       display: inline-block;
     }
   }
 
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 430px) {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -65,7 +65,7 @@ const Logo = styled.div`
   height: 70px;
   width: 210px;
 
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 430px) {
     height: 50px;
     width: 75px;
   }
