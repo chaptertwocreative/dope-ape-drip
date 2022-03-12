@@ -1,6 +1,6 @@
-import { useWindowSize } from "hooks/useWindowSize"
-import styled from "styled-components"
-import { Button } from "../atoms"
+import { useWindowSize } from "hooks/useWindowSize";
+import styled from "styled-components";
+import { Button } from "../atoms";
 
 const Container = styled.div`
   background-color: ${(props) => props.theme.primary};
@@ -16,7 +16,7 @@ const Container = styled.div`
     padding: 2rem;
     flex-direction: column;
   }
-`
+`;
 
 const Text = styled.div`
   color: #1c1c1c;
@@ -47,10 +47,10 @@ const Text = styled.div`
       text-align: center;
     }
   }
-`
+`;
 
 const MintBanner = () => {
-  const { width } = useWindowSize()
+  const { width } = useWindowSize();
   return (
     <Container id="mint">
       <Text>
@@ -66,7 +66,7 @@ const MintBanner = () => {
         Coming Soon
       </Button>
     </Container>
-  )
-}
+  );
+};
 
-export default MintBanner
+export default MintBanner;
