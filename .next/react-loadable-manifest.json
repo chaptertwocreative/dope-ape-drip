@@ -1,0 +1,15 @@
+{
+  "../../node_modules/@web3-react/walletconnect-connector/dist/walletconnect-connector.esm.js -> @walletconnect/ethereum-provider": {
+    "id": 44952,
+    "files": [
+      "static/chunks/952.dbb0cd494842ba56.js",
+      "static/chunks/563.fbd5f4f9151f8110.js"
+    ]
+  },
+  "_app.js -> ../components/defaultprovider": {
+    "id": 68442,
+    "files": [
+      "static/chunks/442.9942b35dd5526e85.js"
+    ]
+  }
+}
