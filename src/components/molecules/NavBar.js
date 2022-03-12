@@ -160,7 +160,7 @@ const NavBar = ({ isHome }) => {
                 </SocialIcon>
               </a>
               <a
-                href="https://opensea.io/collection/dopeapedripsociety"
+                href="https://opensea.io/collection/dopeapedripvc1"
                 target="_blank"
                 rel="noreferrer"
                 className="social-links"

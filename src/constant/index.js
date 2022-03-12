@@ -103,7 +103,7 @@ export const team = [
     role: "Co-Founder",
     handles: {
       twitter: "",
-      instagram: "edsony10"
+      instagram: "edson_y10"
     }
   },
   {
@@ -128,12 +128,12 @@ export const team = [
   },
   {
     src: ALEX,
-    alt: "Alex ape",
-    name: "Alex",
+    alt: "Pezy ape",
+    name: "Pezy",
     role: "Community Manager",
     handles: {
-      twitter: "AlexOASeth",
-      instagram: ""
+      twitter: "ignDrona",
+      instagram: "pranav.mhn"
     }
   }
 ]
