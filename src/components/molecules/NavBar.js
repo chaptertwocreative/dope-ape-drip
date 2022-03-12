@@ -1,12 +1,12 @@
-import Image from "next/image"
-import React from "react"
-import styled from "styled-components"
-import LOGO from "@assets/logo-word.png"
-import SKULL from "@assets/Dope-Ape-Skull.png"
-import Link from "next/link"
-import { useWindowSize } from "hooks/useWindowSize"
-import { slide as Menu } from "react-burger-menu"
-import { FlexContainer } from "components/atoms"
+import Image from "next/image";
+import React from "react";
+import styled from "styled-components";
+import LOGO from "@assets/logo-word.png";
+import SKULL from "@assets/Dope-Ape-Skull.png";
+import Link from "next/link";
+import { useWindowSize } from "hooks/useWindowSize";
+import { slide as Menu } from "react-burger-menu";
+import { FlexContainer } from "components/atoms";
 
 const Container = styled.nav`
   display: flex;
@@ -17,7 +17,7 @@ const Container = styled.nav`
   @media only screen and (max-width: 768px) {
     margin: 1rem 3rem;
   }
-`
+`;
 
 const Links = styled.div`
   display: flex;
@@ -59,7 +59,7 @@ const Links = styled.div`
   .social-links {
     margin: 0 0.5rem;
   }
-`
+`;
 
 const Logo = styled.div`
   height: 70px;
@@ -69,7 +69,7 @@ const Logo = styled.div`
     height: 50px;
     width: 75px;
   }
-`
+`;
 
 const SocialIcon = styled.div`
   height: 30px;
@@ -83,10 +83,10 @@ const SocialIcon = styled.div`
     height: 16px;
     width: 16px;
   }
-`
+`;
 
 const NavBar = ({ isHome }) => {
-  const { width } = useWindowSize()
+  const { width } = useWindowSize();
   return (
     <Container>
       <Link href="/" passHref>
@@ -161,7 +161,7 @@ const NavBar = ({ isHome }) => {
                 </SocialIcon>
               </a>
               <a
-                href="https://opensea.io/collection/dopeapedripsociety"
+                href="https://opensea.io/collection/dopeapedripvc1"
                 target="_blank"
                 rel="noreferrer"
                 className="social-links"
@@ -245,7 +245,7 @@ const NavBar = ({ isHome }) => {
         )}
       </div>
     </Container>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;
